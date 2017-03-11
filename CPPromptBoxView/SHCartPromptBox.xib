@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SHCartPromptBox" id="iN0-l3-epB" customClass="SHCartPromptBox">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="151"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VlC-mg-hvb">
+                    <rect key="frame" x="0.0" y="0.0" width="279" height="151"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdN-Tn-gDu">
+                            <rect key="frame" x="0.0" y="105" width="279" height="1"/>
+                            <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Bff-Bd-pcM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否确认删除该商品" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enu-zO-buh">
+                            <rect key="frame" x="40" y="25" width="199" height="67"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tl7-je-V0h">
+                            <rect key="frame" x="139" y="106" width="140" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sureButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ByO-bn-RGD"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZT-ui-hG3">
+                            <rect key="frame" x="138" y="106" width="1" height="45"/>
+                            <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="hOo-pH-OLJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLO-fx-eBY">
+                            <rect key="frame" x="-1" y="108" width="140" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="deN-Ek-FPu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.090196078430000007" green="0.10980392160000001" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="GLO-fx-eBY" firstAttribute="leading" secondItem="VlC-mg-hvb" secondAttribute="leading" constant="-1" id="0Yv-ks-qLT"/>
+                        <constraint firstItem="tdN-Tn-gDu" firstAttribute="leading" secondItem="VlC-mg-hvb" secondAttribute="leading" id="Ak6-JI-eFZ"/>
+                        <constraint firstItem="enu-zO-buh" firstAttribute="leading" secondItem="VlC-mg-hvb" secondAttribute="leading" constant="40" id="Kss-tE-MKc"/>
+                        <constraint firstAttribute="bottom" secondItem="JZT-ui-hG3" secondAttribute="bottom" id="O4y-Ol-jvq"/>
+                        <constraint firstAttribute="bottom" secondItem="tdN-Tn-gDu" secondAttribute="bottom" constant="45" id="OMw-hO-faL"/>
+                        <constraint firstItem="GLO-fx-eBY" firstAttribute="top" secondItem="tdN-Tn-gDu" secondAttribute="bottom" constant="2" id="QGz-bp-Zu8"/>
+                        <constraint firstAttribute="bottom" secondItem="GLO-fx-eBY" secondAttribute="bottom" constant="-2" id="Qm7-Xo-aJP"/>
+                        <constraint firstAttribute="trailing" secondItem="tl7-je-V0h" secondAttribute="trailing" id="TpM-Ad-0Za"/>
+                        <constraint firstItem="tl7-je-V0h" firstAttribute="width" secondItem="VlC-mg-hvb" secondAttribute="width" multiplier="0.5" id="UEP-j4-PGn"/>
+                        <constraint firstItem="enu-zO-buh" firstAttribute="centerX" secondItem="VlC-mg-hvb" secondAttribute="centerX" id="bu0-dj-xtF"/>
+                        <constraint firstAttribute="bottom" secondItem="tl7-je-V0h" secondAttribute="bottom" id="d6v-px-vo1"/>
+                        <constraint firstItem="tl7-je-V0h" firstAttribute="leading" secondItem="JZT-ui-hG3" secondAttribute="trailing" id="faY-BL-7Bg"/>
+                        <constraint firstItem="tdN-Tn-gDu" firstAttribute="top" secondItem="enu-zO-buh" secondAttribute="bottom" constant="13" id="hLz-AH-Wmo"/>
+                        <constraint firstItem="tl7-je-V0h" firstAttribute="top" secondItem="tdN-Tn-gDu" secondAttribute="bottom" id="ntk-VB-jwL"/>
+                        <constraint firstItem="enu-zO-buh" firstAttribute="top" secondItem="VlC-mg-hvb" secondAttribute="top" constant="25" id="rGa-3q-C1u"/>
+                        <constraint firstAttribute="trailing" secondItem="tdN-Tn-gDu" secondAttribute="trailing" id="rXc-qh-oLM"/>
+                        <constraint firstItem="JZT-ui-hG3" firstAttribute="top" secondItem="tdN-Tn-gDu" secondAttribute="bottom" id="wPz-RO-sLC"/>
+                        <constraint firstItem="tl7-je-V0h" firstAttribute="leading" secondItem="GLO-fx-eBY" secondAttribute="trailing" id="z1b-Ty-mvJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VlC-mg-hvb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DxS-RZ-98I"/>
+                <constraint firstAttribute="bottom" secondItem="VlC-mg-hvb" secondAttribute="bottom" id="Ixw-N7-ltZ"/>
+                <constraint firstAttribute="trailing" secondItem="VlC-mg-hvb" secondAttribute="trailing" id="V10-Gd-SRs"/>
+                <constraint firstItem="VlC-mg-hvb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e6x-bA-HzN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="GLO-fx-eBY" id="pGN-Zb-Qb6"/>
+                <outlet property="sureButton" destination="tl7-je-V0h" id="9O3-wT-pRn"/>
+                <outlet property="titleLable" destination="enu-zO-buh" id="UTw-Fw-gjl"/>
+            </connections>
+            <point key="canvasLocation" x="403.5" y="158.5"/>
+        </view>
+    </objects>
+</document>
